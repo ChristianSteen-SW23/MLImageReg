@@ -5,4 +5,8 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(mainProgram mainProgram.c
         imgMaker.c
-        imgMaker.h)
+        imgMaker.h
+        population.c
+        population.h
+        testAPopulation.c
+        testAPopulation.h)

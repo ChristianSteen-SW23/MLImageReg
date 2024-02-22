@@ -8,19 +8,18 @@ typedef struct {
 } imgOfObject;
 
 typedef struct {
+    imgOfObject* obj;
+    int amount;
+} objCol;
+
+typedef struct {
     int x;
     int y;
 } pos;
 
-typedef struct {
-    int** individual;
-    int* indScore;
-    int indSize;
-    int popSize;
-} population;
-
 int **makeMatrix(int size);
 imgOfObject makeCircle(int radius, int** matrix,pos center, int size);
 imgOfObject makeSquare(int radius, int** matrix,pos center, int size);
+objCol* makeTestObj(int cirkelAmount, int squareAmount, int max, int min, int size);
 
 #endif
